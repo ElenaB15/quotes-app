@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #343a40;
+}
+.title-holder {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.title {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.quotes {
+  /* background: linear-gradient(50deg, #977dc8, #b8b6e4, #e7e9ee); */
+  height: auto;
+  padding: 100px 0;
+  position: relative;
+  background: linear-gradient(360deg, #bfffc7, #18a5a7);
+}
+
+.table-holder {
+  max-width: 85%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+table,
+th,
+td {
+  padding: 20px;
+}
+th {
+  text-align: left;
+  color: #18a5a7;
+  font-size: 20px;
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: rgba(231, 233, 238, 0.363);
+}
+.link-hol {
+  text-align: right;
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #18a5a7;
+  padding: 10px 20px;
+  margin: 30px 20px;
+  border-radius: 10px;
+  color: #18a5a7;
+  font-size: 20px;
+}
+.link:hover {
+  background-color: #18a5a7;
+  color: #fff;
+}
+@media screen and (max-width: 650px) {
+  th,
+  td {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .table-holder {
+    max-width: 95%;
+  }
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .table-holder {
+    overflow-x: scroll;
+  }
+}
